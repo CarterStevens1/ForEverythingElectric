@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --primary-color: #030303;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  width: 50%;
+  padding-bottom: 1em;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin: 0 1em 0 1em;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid var(--primary-color);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0c93c1;
+  width: 100vw;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+.line {
+  border-right: 1px solid var(--primary-color);
+}
+
+.container {
+  color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #0c93c1;
+}
+
+.light-img {
+  background-image: url("images/lightbulbs.jpg");
+  z-index: -2;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40%;
+}
+
+.title {
+  color: #fff;
+}
+
+.main-titles {
+  margin: 0;
+}
+
+.section-titles {
+  color: #0c93c1;
+  font-size: 2em;
+}
+
+.about {
+  color: #fff;
+}
+
+.bar {
+  background-color: #0c93c1;
+  padding: 0.5em;
+}
+
+.nicLogo {
+  width: 20%;
+}
+
+.icon-arrow-right {
+  border: solid #0c93c1;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+ul > p {
+  display: inline;
+  padding-left: 0.5em;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.image1 {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
+  .about > p {
+    width: 40ch;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 700px) {
+  .about > p {
+    font-size: 1.2em;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
