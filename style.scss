@@ -143,13 +143,16 @@ ul > p {
   padding-left: 0.5em;
 }
 
+.size {
+  height: 35em;
+}
+
 .gallery {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  height: 30em;
 }
 
 .image1 {
@@ -227,6 +230,10 @@ footer {
     font-size: 1.2em;
     line-height: 2em;
     letter-spacing: 0.05em;
+  }
+
+  .size {
+    height: 100%;
   }
 }
 
