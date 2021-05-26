@@ -132,6 +132,11 @@ ul > p {
 
 .image1 {
   width: 100%;
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 @media (max-width: 500px) {
