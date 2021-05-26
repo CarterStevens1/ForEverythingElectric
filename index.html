@@ -31,17 +31,17 @@
     </div>
 
     <div class="section1 light-img">
-      <div class="title">
-        <h1 class="main-titles">FE-Electical</h1>
-        <h1 class="main-titles">Fast</h1>
-        <h1 class="main-titles">Afordable</h1>
-        <h1 class="main-titles">Reliable</h1>
+      <div class="title container">
+        
+        <h1 class="main-titles">Fast.</h1>
+        <h1 class="main-titles">Afordable.</h1>
+        <h1 class="main-titles">Reliable.</h1>
       </div>
     </div>
     <div class="container">
       <div class="about">
         <h2 class="section-titles">ABOUT US</h2>
-        <p>
+        <p class="about-text">
           We are an experienced electrical contractor based in Cardiff, aiming
           to carry out only the highest quality work. We cover any aspect of
           electrical work you need! Our aim is to offer a friendly and
@@ -49,10 +49,11 @@
           The team is always flexible with their work and will aim to meet all
           your needs and requirements.
         </p>
-        <p>
+        <p class="about-text">
           Our goal is to always improve and adapt our work to provide the best
           service possible.
         </p>
+        <p>Contact us now for a free no obligation quote which is fast, reliable and affordable!</p>
       </div>
     </div>
     <!-- <div class="bar">
@@ -102,11 +103,190 @@
           src="images/project.jpg"
           alt="bathroom work"
         />
-        <img class="image1" src="images/project.jpg" alt="bathroom work" />
-        <img class="image1" src="images/project.jpg" alt="bathroom work" />
-        <img class="image1" src="images/project.jpg" alt="bathroom work" />
+
+        <img class="image1" src="images/project3.jpg" alt="bathroom work" />
+        <img class="image1" src="images/project4.jpg" alt="bathroom work" />
+        <img class="image1" src="images/project5.jpg" alt="bathroom work" />
+        <img class="image1" src="images/project6.jpg" alt="bathroom work" />
+        <img class="image1" src="images/project7.jpg" alt="bathroom work" />
       </div>
     </div>
+
+    <div class="container">
+      <div id="fcf-form">
+        <h3 class="fcf-h3 section-titles">CONTACT US</h3>
+    
+      </div>
+        <form
+          id="fcf-form-id"
+          class="fcf-form-class"
+          method="post"
+          action="contact-form-process.php"
+        >
+          <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+              <input
+                type="text"
+                id="Name"
+                name="Name"
+                class="fcf-form-control"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+              <input
+                type="email"
+                id="Email"
+                name="Email"
+                class="fcf-form-control"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+              <textarea
+                id="Message"
+                name="Message"
+                class="fcf-form-control"
+                rows="6"
+                maxlength="3000"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="fcf-form-group">
+            <button
+              type="submit"
+              id="fcf-button"
+              class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
+            >
+              Send Message
+            </button>
+          </div>
+
+        
+          </div>
+        </form>
+      </div>
+    </div>
+
+   
+      <footer>
+        
+          <div class="bar">
+            <div class="credit-logo">
+              <img class="nicLogo" src="images/niceicLogo.jpg" alt="NIC EIC " />
+            </div>
+            <div class="bar footer">
+              <h4 >Company</h4>
+              <p>
+                For Everything Electrical</p>
+                <p>Cardiff</p>
+                <div class="number">
+                <i class="fas fa-phone"></i>
+                <p>07460 654083</p>
+              </div>
+              </p>
+            </div>
+            <div class="socials">
+              <div class="social">
+              <a href="https://www.facebook.com/Foreverythingelectrical-102326322036701/?ref=page_internal" class="fab fa-facebook-square"><p class="social-text">Facebook</p></a>
+            </div>
+            <div class="social">
+              <a href="https://www.instagram.com/foreverythingelectrical/" class="fab fa-instagram"><p class="social-text">Instagram</p></a>
+            </div>
+          
+            </div>
+          </div>
+        
+      </footer>
+
+
+    <!-- <?php
+if (isset($_POST['Email'])) {
+
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+    $email_to = "you@yourdomain.com";
+    $email_subject = "New form submissions";
+
+    function problem($error)
+    {
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br><br>";
+        echo $error . "<br><br>";
+        echo "Please go back and fix these errors.<br><br>";
+        die();
+    }
+
+    // validation expected data exists
+    if (
+        !isset($_POST['Name']) ||
+        !isset($_POST['Email']) ||
+        !isset($_POST['Message'])
+    ) {
+        problem('We are sorry, but there appears to be a problem with the form you submitted.');
+    }
+
+    $name = $_POST['Name']; // required
+    $email = $_POST['Email']; // required
+    $message = $_POST['Message']; // required
+
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+
+    if (!preg_match($email_exp, $email)) {
+        $error_message .= 'The Email address you entered does not appear to be valid.<br>';
+    }
+
+    $string_exp = "/^[A-Za-z .'-]+$/";
+
+    if (!preg_match($string_exp, $name)) {
+        $error_message .= 'The Name you entered does not appear to be valid.<br>';
+    }
+
+    if (strlen($message) < 2) {
+        $error_message .= 'The Message you entered do not appear to be valid.<br>';
+    }
+
+    if (strlen($error_message) > 0) {
+        problem($error_message);
+    }
+
+    $email_message = "Form details below.\n\n";
+
+    function clean_string($string)
+    {
+        $bad = array("content-type", "bcc:", "to:", "cc:", "href");
+        return str_replace($bad, "", $string);
+    }
+
+    $email_message .= "Name: " . clean_string($name) . "\n";
+    $email_message .= "Email: " . clean_string($email) . "\n";
+    $email_message .= "Message: " . clean_string($message) . "\n";
+
+    // create email headers
+    $headers = 'From: ' . $email . "\r\n" .
+        'Reply-To: ' . $email . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+    @mail($email_to, $email_subject, $email_message, $headers);
+?>
+
+    Message -->
+    <!-- 
+    Thank you for contacting us. We will be in touch with you very soon.
+
+    <?php
+}
+?> -->
 
     <script src="script.js"></script>
   </body>
