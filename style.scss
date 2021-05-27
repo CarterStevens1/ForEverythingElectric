@@ -3,6 +3,9 @@
 :root {
   --primary-color: #030303;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;
