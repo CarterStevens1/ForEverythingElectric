@@ -148,6 +148,10 @@ body {
   margin: 0;
 }
 
+.electrical-test {
+  width: 100%;
+}
+
 .bar {
   background-color: #0c93c1;
   padding: 0.5em;
@@ -209,7 +213,7 @@ footer {
 }
 
 .number > p {
-  margin-left: 5px;
+  margin: 0.5em 0 0 0.5em;
 }
 
 .footer > h4 {
@@ -232,10 +236,10 @@ footer {
 .fab,
 .far {
   font-weight: 400;
-  font-size: 2em;
+  font-size: 2.5em;
   color: #fff;
   text-decoration: none;
-  padding: 0.5em;
+  padding: 0.2em 0.25em 0.2em 0.25em;
 }
 
 @media (max-width: 500px) {

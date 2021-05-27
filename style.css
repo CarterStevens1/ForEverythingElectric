@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
   --primary-color: #030303;
-  --secondary-color: #0c93c1;
 }
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -22,11 +21,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -39,15 +38,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: var(--primary-color);
 }
 
@@ -74,12 +73,12 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: var(--secondary-color);
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0c93c1;
   width: 100vw;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
@@ -94,7 +93,7 @@ body {
   max-width: 700px;
   margin: 0 auto;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid #0c93c1;
 }
 
 .container:last-of-type {
@@ -141,12 +140,8 @@ body {
   z-index: -1;
   opacity: 0.7;
   -webkit-transform: scale(1.07, 1.05) skewX(-15deg);
-  transform: scale(1.07, 1.05) skewX(-15deg);
-  background-image: linear-gradient(
-    to top left,
-    #000000,
-    var(--secondary-color)
-  );
+          transform: scale(1.07, 1.05) skewX(-15deg);
+  background-color: #0c93c1;
 }
 
 .highlighter1::after {
@@ -154,7 +149,7 @@ body {
 }
 
 .highlighter2::after {
-  width: 70%;
+  width: 65%;
 }
 
 .main-titles {
@@ -162,7 +157,7 @@ body {
 }
 
 .section-titles {
-  color: var(--secondary-color);
+  color: #0c93c1;
   font-size: 2em;
 }
 
@@ -174,8 +169,12 @@ body {
   margin: 0;
 }
 
+.electrical-test {
+  width: 100%;
+}
+
 .bar {
-  background-color: var(--secondary-color);
+  background-color: #0c93c1;
   padding: 0.5em;
 }
 
@@ -184,7 +183,7 @@ body {
 }
 
 .icon-arrow-right {
-  border: solid var(--secondary-color);
+  border: solid #0c93c1;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -206,11 +205,11 @@ ul > p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 80%;
   margin: 0 auto;
 }
@@ -239,15 +238,15 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .number > p {
-  margin-left: 5px;
+  margin: 0.5em 0 0 0.5em;
 }
 
 .footer > h4 {
@@ -267,17 +266,17 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fab,
 .far {
   font-weight: 400;
-  font-size: 2em;
+  font-size: 2.5em;
   color: #fff;
   text-decoration: none;
-  padding: 0.5em;
+  padding: 0.2em 0.25em 0.2em 0.25em;
 }
 
 @media (max-width: 500px) {
@@ -337,7 +336,7 @@ footer {
   flex-wrap: wrap;
   -ms-flex-align: stretch;
   -webkit-box-align: stretch;
-  align-items: stretch;
+          align-items: stretch;
   width: 100%;
 }
 
@@ -350,19 +349,16 @@ footer {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.05em;
-  color: var(--secondary-color);
+  color: #0c93c1;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid #0c93c1;
   outline: none;
   border-radius: 1rem;
-  -webkit-transition: border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .fcf-form-control:focus {
@@ -417,16 +413,10 @@ label.fcf-label {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 2rem;
-  -webkit-transition: color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -445,13 +435,13 @@ label.fcf-label {
 .fcf-btn.focus {
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .fcf-btn-primary {
   color: black;
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
+  background-color: #0c93c1;
+  border-color: #0c93c1;
 }
 
 .fcf-btn-primary:hover {
@@ -466,7 +456,7 @@ label.fcf-label {
   background-color: #0069d9;
   border-color: #0062cc;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
 .fcf-btn-lg,
