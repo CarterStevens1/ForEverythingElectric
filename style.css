@@ -175,6 +175,7 @@ body {
 
 .electrical-test {
   width: 100%;
+  position: relative;
 }
 
 .bar {
