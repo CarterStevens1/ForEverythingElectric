@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
   --primary-color: #030303;
+  --secondary-color: #0c93c1;
 }
 
 html {
@@ -82,7 +83,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #0c93c1;
+  background-color: var(--secondary-color);
   width: 100vw;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
@@ -97,7 +98,7 @@ body {
   max-width: 700px;
   margin: 0 auto;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #0c93c1;
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 .container:last-of-type {
@@ -110,7 +111,8 @@ body {
   opacity: 0.9;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50%;
+  background-position: center;
+  height: 73vh;
   position: relative;
 }
 
@@ -145,7 +147,7 @@ body {
   opacity: 0.7;
   -webkit-transform: scale(1.07, 1.05) skewX(-15deg);
           transform: scale(1.07, 1.05) skewX(-15deg);
-  background-color: #0c93c1;
+  background-color: var(--secondary-color);
 }
 
 .highlighter1::after {
@@ -161,7 +163,7 @@ body {
 }
 
 .section-titles {
-  color: #0c93c1;
+  color: var(--secondary-color);
   font-size: 2em;
 }
 
@@ -179,7 +181,7 @@ body {
 }
 
 .bar {
-  background-color: #0c93c1;
+  background-color: var(--secondary-color);
   padding: 0.5em;
 }
 
@@ -188,7 +190,7 @@ body {
 }
 
 .icon-arrow-right {
-  border: solid #0c93c1;
+  border: solid var(--secondary-color);
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -199,6 +201,40 @@ body {
 ul > p {
   display: inline;
   padding-left: 0.5em;
+}
+
+.drop-text {
+  padding-left: 0.8em;
+  display: block;
+}
+
+.drop-down {
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.speech-bubble {
+  position: relative;
+  background: var(--secondary-color);
+  border-radius: 3em;
+  border: transparent;
+  padding: 0.5em;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 1em solid transparent;
+  border-bottom-color: var(--secondary-color);
+  border-top: 0;
+  border-left: 0;
+  margin-left: -0.5em;
+  margin-top: -0.8em;
 }
 
 .size {
@@ -232,6 +268,39 @@ ul > p {
   opacity: 1;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 footer {
@@ -297,6 +366,12 @@ footer {
   }
 }
 
+@media (max-width: 500px) and (min-width: 700px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
 @media (min-width: 700px) {
   .about > p {
     font-size: 1.2em;
@@ -305,6 +380,21 @@ footer {
   }
   .size {
     height: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .light-img {
+    height: 62vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main-titles {
+    font-size: 4em;
+  }
+  .light-img {
+    background-position: bottom;
   }
 }
 
@@ -354,7 +444,7 @@ footer {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.05em;
-  color: #0c93c1;
+  color: var(--secondary-color);
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #0c93c1;
@@ -397,7 +487,7 @@ label.fcf-label {
 }
 
 .fcf-credit a:hover {
-  color: #0056b3;
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 
@@ -445,21 +535,21 @@ label.fcf-label {
 
 .fcf-btn-primary {
   color: black;
-  background-color: #0c93c1;
-  border-color: #0c93c1;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .fcf-btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .fcf-btn-primary:focus,
 .fcf-btn-primary.focus {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
   -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
