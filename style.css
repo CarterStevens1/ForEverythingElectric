@@ -19,6 +19,7 @@ body {
   margin: 0;
   background-color: #090d0e;
   color: #9f9f9f;
+  overflow-x: hidden;
 }
 
 .topbar {
@@ -348,7 +349,7 @@ footer {
 
 @media (max-width: 500px) {
   .light-img {
-    height: 86vh;
+    height: 84vh;
   }
   .logo {
     padding: 0.5em 0;
