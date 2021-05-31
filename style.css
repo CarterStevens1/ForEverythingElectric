@@ -112,7 +112,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 73vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -347,6 +347,9 @@ footer {
 }
 
 @media (max-width: 500px) {
+  .light-img {
+    height: 86vh;
+  }
   .logo {
     padding: 0.5em 0;
   }
@@ -364,22 +367,22 @@ footer {
 }
 
 @media (min-width: 500px) and (max-width: 700px) {
+  .light-img {
+    height: 85vh;
+  }
   .container {
     max-width: 500px;
   }
 }
 
 @media (min-width: 700px) {
+  .main-titles {
+    font-size: 3em;
+  }
   .about > p {
     font-size: 1.2em;
     line-height: 2em;
     letter-spacing: 0.05em;
-  }
-}
-
-@media (min-width: 800px) {
-  .light-img {
-    height: 62vh;
   }
 }
 
