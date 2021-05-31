@@ -188,6 +188,7 @@ body {
 
 .nicLogo {
   width: 20%;
+  padding-bottom: 1em;
 }
 
 .icon-arrow-right {
@@ -225,10 +226,6 @@ ul > p {
   color: #fff;
 }
 
-.size {
-  height: 35em;
-}
-
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,6 +238,10 @@ ul > p {
           align-items: center;
   width: 80%;
   margin: 0 auto;
+}
+
+.size {
+  padding-bottom: 2em;
 }
 
 .image1 {
@@ -374,9 +375,6 @@ footer {
     line-height: 2em;
     letter-spacing: 0.05em;
   }
-  .size {
-    height: 100%;
-  }
 }
 
 @media (min-width: 800px) {
@@ -401,6 +399,10 @@ footer {
   }
   .section-titles {
     font-size: 3em;
+  }
+  .nicLogo {
+    width: 15%;
+    padding-bottom: 2em;
   }
 }
 
