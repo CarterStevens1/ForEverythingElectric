@@ -152,12 +152,13 @@ body {
 
 .about-text {
   margin: 0;
+  line-height: 1.5em;
 }
 
 .electrical-test {
   width: 100%;
   position: relative;
-  padding-top: 2em;
+  padding: 2em 0 1em 0;
 }
 
 .bar {
@@ -168,6 +169,10 @@ body {
 .nicLogo {
   width: 20%;
   padding-bottom: 1em;
+}
+
+.bubble-section {
+  margin: 0 0 2em 0;
 }
 
 .icon-arrow-right {
@@ -344,12 +349,20 @@ footer {
 
   .about > p {
     font-size: 1.2em;
-    line-height: 2em;
+
     letter-spacing: 0.05em;
   }
 }
 
 @media (min-width: 1000px) {
+  .links {
+    padding: 0.6em 0;
+  }
+
+  .nav-link {
+    letter-spacing: 0.2em;
+  }
+
   .container {
     max-width: 800px;
   }
@@ -372,6 +385,10 @@ footer {
   .nicLogo {
     width: 15%;
     padding-bottom: 2em;
+  }
+
+  .speech-bubble {
+    padding: 1em;
   }
 }
 
