@@ -17,8 +17,8 @@ function prevslide() {
   prev.addEventListener("click", () => {
     activeSlide--;
 
-    if ((activeSlide = 0)) {
-      return;
+    if (activeSlide < 0) {
+      activeSlide = images.length - 1;
     }
 
     setActiveImage();

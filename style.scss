@@ -156,6 +156,7 @@ body {
 .electrical-test {
   width: 100%;
   position: relative;
+  padding-top: 2em;
 }
 
 .bar {
@@ -182,14 +183,16 @@ ul > p {
 }
 
 .drop-text {
-  padding-left: 0.8em;
+  padding: 0.5em;
   display: block;
+  text-align: center;
+
+  margin: 0 auto;
 }
 
 .drop-down {
-  text-decoration: underline;
   text-transform: uppercase;
-  cursor: pointer;
+  font-weight: 900;
 }
 
 .speech-bubble {
@@ -198,21 +201,7 @@ ul > p {
   border-radius: 3em;
   border: transparent;
   padding: 0.5em;
-}
-
-.speech-bubble:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 1em solid transparent;
-  border-bottom-color: var(--secondary-color);
-  border-top: 0;
-  border-left: 0;
-  margin-left: -0.5em;
-  margin-top: -0.8em;
+  color: #fff;
 }
 
 .size {
@@ -283,6 +272,10 @@ footer {
 
 .number > p {
   margin: 0.5em 0 0 0.5em;
+}
+
+.footer {
+  color: #fff;
 }
 
 .footer > h4 {
@@ -358,15 +351,30 @@ footer {
   .container {
     max-width: 800px;
   }
+
+  .title {
+    margin-left: 2em;
+  }
   .main-titles {
     font-size: 4em;
   }
   .light-img {
     background-position: bottom;
+    height: 78vh;
   }
 
   .section-titles {
     font-size: 3em;
+  }
+}
+
+@media (min-width: 1500px) {
+  .title {
+    margin-left: 6em;
+    margin-bottom: 2em;
+  }
+  .main-titles {
+    font-size: 5em;
   }
 }
 
@@ -463,7 +471,7 @@ label.fcf-label {
 .fcf-btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: #fff;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -499,7 +507,7 @@ label.fcf-label {
 }
 
 .fcf-btn-primary {
-  color: rgb(0, 0, 0);
+  color: #fff;
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
 }
