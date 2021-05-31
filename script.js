@@ -52,3 +52,50 @@ document.querySelector(".links").addEventListener("click", function (e) {
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
+
+$(document).ready(function () {
+  $(".fcf-btn").click(function (e) {
+    let email = $(".email").val();
+    let name = $(".name").val();
+    let message = $(".message").val();
+    let statusEl = $(".status");
+    statusEl.empty();
+
+    if (email.length > 5 && email.includes("@") && email.includes(".")) {
+    } else {
+      e.preventDefault();
+      statusEl.append("<p>Email is not valid!</p>");
+    }
+
+    if (message.length > 15) {
+    } else {
+      e.preventDefault();
+      statusEl.append("<p>Message is not valid!</p>");
+    }
+
+    if (name.length > 2) {
+    } else {
+      e.preventDefault();
+      statusEl.append("<p>Name is not valid!</p>");
+    }
+  });
+});
+
+window.onload = function () {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      // generate a five digit number for the contact_number variable
+      this.contact_number.value = (Math.random() * 100000) | 0;
+      // these IDs from the previous steps
+      emailjs.sendForm("contact_service", "contact_form", this).then(
+        function () {
+          console.log("SUCCESS!");
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
+    });
+};
