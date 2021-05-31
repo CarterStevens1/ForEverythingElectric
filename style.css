@@ -10,15 +10,15 @@ html {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
   margin: 0;
-  background-color: var(--primary-color);
-  color: #fff;
+  background-color: #090d0e;
+  color: #9f9f9f;
 }
 
 .topbar {
@@ -26,16 +26,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .logo {
   width: 50%;
-  padding-bottom: 1em;
+  padding: 0.5em 0;
 }
 
 .nav {
@@ -43,20 +43,20 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: var(--primary-color);
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #090d0e;
 }
 
 .nav-link {
-  color: var(--primary-color);
+  color: #fff;
   text-decoration: none;
   margin: 0 1em 0 1em;
   cursor: pointer;
@@ -78,11 +78,11 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: var(--secondary-color);
   width: 100vw;
   padding-bottom: 0.5em;
@@ -90,11 +90,11 @@ body {
 }
 
 .line {
-  border-right: 1px solid var(--primary-color);
+  border-right: 1px solid #fff;
 }
 
 .container {
-  color: #fff;
+  color: #9f9f9f;
   max-width: 700px;
   margin: 0 auto;
   padding-bottom: 0.5em;
@@ -112,7 +112,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 73vh;
+  height: 82vh;
   position: relative;
 }
 
@@ -146,7 +146,7 @@ body {
   z-index: -1;
   opacity: 0.7;
   -webkit-transform: scale(1.07, 1.05) skewX(-15deg);
-          transform: scale(1.07, 1.05) skewX(-15deg);
+  transform: scale(1.07, 1.05) skewX(-15deg);
   background-color: var(--secondary-color);
 }
 
@@ -168,7 +168,7 @@ body {
 }
 
 .about {
-  color: #fff;
+  color: #9f9f9f;
 }
 
 .about-text {
@@ -206,6 +206,7 @@ ul > p {
 .drop-text {
   padding-left: 0.8em;
   display: block;
+  font-size: 1.2em;
 }
 
 .drop-down {
@@ -220,6 +221,7 @@ ul > p {
   border-radius: 3em;
   border: transparent;
   padding: 0.5em;
+  color: #fff;
 }
 
 .speech-bubble:after {
@@ -246,11 +248,11 @@ ul > p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 80%;
   margin: 0 auto;
 }
@@ -286,9 +288,9 @@ ul > p {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -312,11 +314,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .number > p {
@@ -340,8 +342,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .fab,
@@ -354,21 +356,32 @@ footer {
 }
 
 @media (max-width: 500px) {
+  .logo {
+    width: 70%;
+  }
   .container {
-    max-width: 400px;
+    max-width: 350px;
   }
   .about > p {
-    width: 40ch;
+    width: 35ch;
     font-size: 1.1em;
+    line-height: 1.5em;
   }
   .social-text {
     display: none;
   }
+
+  .drop-text {
+    line-height: 1.5em;
+  }
 }
 
-@media (max-width: 500px) and (min-width: 700px) {
+@media (min-width: 500px) and (max-width: 700px) {
   .container {
     max-width: 500px;
+  }
+  .light-img {
+    height: 85vh;
   }
 }
 
@@ -384,17 +397,35 @@ footer {
 }
 
 @media (min-width: 800px) {
+  .main-titles {
+    font-size: 3em;
+  }
+  .logo {
+    width: 35%;
+  }
   .light-img {
-    height: 62vh;
+    height: 85vh;
   }
 }
 
 @media (min-width: 1000px) {
+  .container {
+    max-width: 800px;
+  }
   .main-titles {
     font-size: 4em;
   }
   .light-img {
     background-position: bottom;
+  }
+  .section-titles {
+    font-size: 3em;
+  }
+  .drop-text {
+    width: 65ch;
+  }
+  .light-img {
+    height: 82vh;
   }
 }
 
@@ -431,7 +462,7 @@ footer {
   flex-wrap: wrap;
   -ms-flex-align: stretch;
   -webkit-box-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
   width: 100%;
 }
 
@@ -450,10 +481,13 @@ footer {
   border: 1px solid #0c93c1;
   outline: none;
   border-radius: 1rem;
-  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .fcf-form-control:focus {
@@ -508,10 +542,16 @@ label.fcf-label {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 2rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -530,7 +570,7 @@ label.fcf-label {
 .fcf-btn.focus {
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .fcf-btn-primary {
@@ -551,7 +591,7 @@ label.fcf-label {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
   -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
 .fcf-btn-lg,

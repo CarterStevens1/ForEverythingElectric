@@ -16,8 +16,8 @@ body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
   margin: 0;
-  background-color: var(--primary-color);
-  color: #fff;
+  background-color: #090d0e;
+  color: #9f9f9f;
 }
 
 //NavBar
@@ -38,11 +38,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--primary-color);
+  background-color: #090d0e;
 }
 
 .nav-link {
-  color: var(--primary-color);
+  color: #fff;
   text-decoration: none;
   margin: 0 1em 0 1em;
   cursor: pointer;
@@ -67,14 +67,14 @@ body {
 }
 
 .line {
-  border-right: 1px solid var(--primary-color);
+  border-right: 1px solid #fff;
 }
 //Navbar End
 
 //Containers Start
 
 .container {
-  color: #fff;
+  color: #9f9f9f;
   max-width: 700px;
   margin: 0 auto;
   padding-bottom: 0.5em;
@@ -146,7 +146,7 @@ body {
 }
 
 .about {
-  color: #fff;
+  color: #9f9f9f;
 }
 
 .about-text {
@@ -312,13 +312,17 @@ footer {
 }
 
 @media (max-width: 500px) {
+  .logo {
+    padding: 0.5em 0;
+  }
   .container {
-    max-width: 400px;
+    max-width: 350px;
   }
 
   .about > p {
-    width: 40ch;
+    width: 35ch;
     font-size: 1.1em;
+    line-height: 1.5em;
   }
 
   .social-text {
@@ -326,7 +330,7 @@ footer {
   }
 }
 
-@media (max-width: 500px) and (min-width: 700px) {
+@media (min-width: 500px) and (max-width: 700px) {
   .container {
     max-width: 500px;
   }
@@ -351,11 +355,18 @@ footer {
 }
 
 @media (min-width: 1000px) {
+  .container {
+    max-width: 800px;
+  }
   .main-titles {
     font-size: 4em;
   }
   .light-img {
     background-position: bottom;
+  }
+
+  .section-titles {
+    font-size: 3em;
   }
 }
 
